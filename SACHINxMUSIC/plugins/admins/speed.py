@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from SACHINxMUSIC import app
-from SACHINxMUSIC.core.call import SACHINxMUSIC
+from SACHINxMUSIC.core.call import RAUSHAN
 from SACHINxMUSIC.misc import SUDOERS, db
 from SACHINxMUSIC.utils import AdminRightsCheck
 from SACHINxMUSIC.utils.database import is_active_chat, is_nonadmin_chat
