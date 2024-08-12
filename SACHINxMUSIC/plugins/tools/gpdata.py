@@ -4,7 +4,7 @@ from pyrogram import filters, Client
 from SACHINxMUSIC import app
 from config import OWNER_ID
 from pyrogram.types import Message
-from SACHINxMUSIC.utils.SACHINxMUSIC_ban import admin_filter
+from SACHINxMUSIC.utils.SACHIN_ban import admin_filter
 from pyrogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
 
