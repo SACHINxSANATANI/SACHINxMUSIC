@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from SACHINxMUSIC import app
-from SACHINxMUSIC.core.call import SACHINxMUSIC, autoend
+from SACHINxMUSIC.core.call import RAUSHAN, autoend
 from SACHINxMUSIC.utils.database import get_client, is_active_chat, is_autoend
 
 
