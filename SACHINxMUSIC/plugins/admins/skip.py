@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from SACHINxMUSIC import YouTube, app, YTB
-from SACHINxMUSIC.core.call import SACHINxMUSIC
+from SACHINxMUSIC.core.call import RAUSHAN
 from SACHINxMUSIC.misc import db
 from SACHINxMUSIC.utils.database import get_loop
 from SACHINxMUSIC.utils.decorators import AdminRightsCheck
