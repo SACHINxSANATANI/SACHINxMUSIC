@@ -1,5 +1,6 @@
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus
+from SACHINxMUSIC.core.bot import RAUSHAN
 
 import config
 
