@@ -2,7 +2,7 @@ import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
 from SACHINxMUSIC import app
 from pyrogram import filters
-from SACHINxMUSIC.utils.RAUSHAN_ban import admin_filter
+from SACHINxMUSIC.utils.SACHIN_ban import admin_filter
 
 
 
