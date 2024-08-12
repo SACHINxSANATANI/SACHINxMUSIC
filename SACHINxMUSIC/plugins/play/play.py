@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from SACHINxMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from SACHINxMUSIC.core.call import SACHINxMUSIC
+from SACHINxMUSIC.core.call import RAUSHAN
 from SACHINxMUSIC.utils import seconds_to_min, time_to_seconds
 from SACHINxMUSIC.utils.channelplay import get_channeplayCB
 from SACHINxMUSIC.utils.decorators.language import languageCB
