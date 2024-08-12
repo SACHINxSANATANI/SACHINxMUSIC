@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from SACHINxMUSIC import YouTube, app
-from SACHINxMUSIC.core.call import SACHINxMUSIC
+from SACHINxMUSIC.core.call import RAUSHAN
 from SACHINxMUSIC.misc import db
 from SACHINxMUSIC.utils import AdminRightsCheck, seconds_to_min
 from SACHINxMUSIC.utils.inline import close_markup
