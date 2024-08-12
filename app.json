@@ -1,0 +1,73 @@
+{
+    "name": "SACHINxMUSIC",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/a852ad09c23571d37d603.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "RAUSHAN",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "??? ??????? | ??? ?'?",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "??? ??????? | ??? ??s?",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "??? | ??? ?????",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "??? | ??????? ???",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "????? ??????? | ?s?? ?'?",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "? ???????? ?2 s????? s?ss???.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "???? ?????? ??????? ??? ???",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "???? ?????? ??? ????",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "??? ????? | ????? ?'? | ???? : -100000000000",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
