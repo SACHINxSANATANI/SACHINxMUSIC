@@ -11,7 +11,7 @@ TEMP_MONGODB = "mongodb+srv://kuldiprathod2003:kuldiprathod2003@cluster0.wxqpikp
 
 if config.MONGO_DB_URI is None:
     LOGGER(__name__).warning(
-        ɴᴏ ᴍᴏɴɢᴏ ᴅʙ ᴜʀʟ ғᴏᴜɴᴅ...!! ʏᴏᴜʀ ʙᴏᴛ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ sᴀɴᴀᴛᴀɴɪ ᴍᴜsɪᴄ ᴅᴀᴛᴀʙᴀsᴇ"
+        "ɴᴏ ᴍᴏɴɢᴏ ᴅʙ ᴜʀʟ ғᴏᴜɴᴅ...!! ʏᴏᴜʀ ʙᴏᴛ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ sᴀɴᴀᴛᴀɴɪ ᴍᴜsɪᴄ ᴅᴀᴛᴀʙᴀsᴇ"
     )
     temp_client = Client(
         "SACHINxMUSIC",
