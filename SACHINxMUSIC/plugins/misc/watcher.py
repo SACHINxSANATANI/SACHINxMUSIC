@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from SACHINxMUSIC import app
-from SACHINxMUSIC.core.call import SACHINxMUSIC
+from SACHINxMUSIC.core.call import RAUSHAN
 
 welcome = 20
 close = 30
