@@ -1,7 +1,7 @@
 from pyrogram import  filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from SACHINxMUSIC.utils.SACHIN_font import Fonts
+from SACHINxMUSIC.utils.SACHINxMUSIC_font import Fonts
 from SACHINxMUSIC import app
 
 @app.on_message(filters.command(["font", "fonts"]))
