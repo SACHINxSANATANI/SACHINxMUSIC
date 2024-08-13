@@ -4,6 +4,7 @@ from pyrogram.types import InlineKeyboardButton
 
 from SACHINxMUSIC.utils.formatters import time_to_seconds
 
+from config import SUPPORT_CHAT, OWNER_ID
 
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
@@ -40,49 +41,35 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "🅢—————————"
+        bar = "◉—————————"
     elif 10 < umm < 20:
-        bar = "—🅞————————"
+        bar = "—◉————————"
     elif 20 <= umm < 30:
-        bar = "——🅝———————"
+        bar = "——◉———————"
     elif 30 <= umm < 40:
-        bar = "———🅐——————"
+        bar = "———◉——————"
     elif 40 <= umm < 50:
-        bar = "————♡—————"
+        bar = "————◉—————"
     elif 50 <= umm < 60:
-        bar = "—————🅡————"
+        bar = "—————◉————"
     elif 60 <= umm < 70:
-        bar = "——————🅐———"
+        bar = "——————◉———"
     elif 70 <= umm < 80:
-        bar = "———————🅙——"
+        bar = "———————◉——"
     elif 80 <= umm < 95:
-        bar = "————————🅐—"
+        bar = "————————◉—"
     else:
-        bar = "—————————"
+        bar = "—————————◉"
 
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/HIMANSHI_MUSIC_BOT?startgroup=true",)
         ],
         [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
+         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID),
+         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"{SUPPORT_CHAT}",),
         ],
-      [
-            InlineKeyboardButton(
-                text="𝖮ᴡɴᴇʀ 🥀", url="https://t.me/WORLD_ALPHA",
-            ),
-            InlineKeyboardButton(
-                text="𝖲ᴜᴘᴘᴏʀᴛ 🥀", url="https://t.me/+Q25anL0Ckuk5NzM1",
-            )
-        ],
-         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
         ]
 
     return buttons
@@ -91,22 +78,14 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
 def stream_markup(_, videoid, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-         ],
+         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/HIMANSHI_MUSIC_BOT?startgroup=true",)
+        ],
         [
-            InlineKeyboardButton(
-                text="𝖮𝗐𝗇𝖾𝗋🥀", url="https://t.me/WORLD_ALPHA",
-            ),
-            InlineKeyboardButton(
-                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍🥀", url="https://t.me/+Q25anL0Ckuk5NzM1",
-            )
+         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID),
+         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"{SUPPORT_CHAT}",),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
-    ]
+        ]
 
     return buttons
 
@@ -195,11 +174,17 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [
+         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/HIMANSHI_MUSIC_BOT?startgroup=true",)
+        ],
+        [
+         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID),
+         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"{SUPPORT_CHAT}",),
+        ],
+        [
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
+        ],
     ]
-
-    return buttons
-
 
 def telegram_markup(_, chat_id):
     buttons = [
@@ -209,6 +194,13 @@ def telegram_markup(_, chat_id):
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
+         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/HIMANSHI_MUSIC_BOT?startgroup=true",)
+        ],
+        [
+         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID),
+         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"{SUPPORT_CHAT}",),
         ],
         [
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
@@ -428,6 +420,13 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
+         InlineKeyboardButton(text=_["S_B_3"], url=f"https://t.me/HIMANSHI_MUSIC_BOT?startgroup=true",)
+        ],
+        [
+         InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", user_id=config.OWNER_ID),
+         InlineKeyboardButton(text="• ɢʀᴏᴜᴘ •", url=f"{SUPPORT_CHAT}",),
         ],
         [
             InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
