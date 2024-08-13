@@ -2,8 +2,9 @@ import math
 
 from config import SUPPORT_CHAT, OWNER_ID
 
-from SACHINxMUSIC.utils.formatters import time_to_seconds
+from pyrogram.types import InlineKeyboardButton
 
+from SACHINxMUSIC.utils.formatters import time_to_seconds
 
 def track_markup(_, videoid, user_id, channel, fplay):
     buttons = [
