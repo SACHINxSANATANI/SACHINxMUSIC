@@ -22,7 +22,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TEAMPURVI/SACHINxMUSIC",
+    "https://github.com/SACHINxSANATANI/SACHINxMUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -60,10 +60,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/0d0d6323a7f0ea9f4ffcb.jpg"
+    "START_IMG_URL", "https://telegra.ph//file/8851111e156d9219d2e9c.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/51cb8a22e65caa4382879.jpg"
+    "PING_IMG_URL", "https://telegra.ph//file/a15788e80dbe3249fbd05.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/9acd828ec45a363add2e9.jpg"
 STATS_IMG_URL = "https://telegra.ph/file/51cb8a22e65caa4382879.jpg"
