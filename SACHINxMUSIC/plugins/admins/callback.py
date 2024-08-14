@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from SACHINxMUSIC import YouTube, app, YTB
+from SACHINxMUSIC import YouTube, app
 from SACHINxMUSIC.core.call import RAUSHAN
 from SACHINxMUSIC.misc import SUDOERS, db
 from SACHINxMUSIC.utils.database import (
