@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from SACHINxMUSIC import YouTube, app, YTB
+from SACHINxMUSIC import YouTube, app
 from SACHINxMUSIC.core.call import RAUSHAN
 from SACHINxMUSIC.misc import db
 from SACHINxMUSIC.utils.database import get_loop
