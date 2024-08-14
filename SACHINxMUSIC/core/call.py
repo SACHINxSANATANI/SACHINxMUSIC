@@ -17,8 +17,7 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from SACHINxMUSIC import LOGGER, YouTube, app
-from SACHINxMUSIC import LOGGER, YouTube, app, YTB
+from SACHINxMUSIC import LOGGER, YouTube, app,
 from SACHINxMUSIC.misc import db
 from SACHINxMUSIC.utils.database import (
     add_active_chat,
