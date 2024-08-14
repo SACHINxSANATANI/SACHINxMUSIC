@@ -35,3 +35,6 @@ git+https://github.com/KurimuzonAkuma/pyrogram@dev
 yt-dlp
 git+https://github.com/alexmercerind/youtube-search-python@main
 git+https://github.com/joetats/youtube_search@master
+
+
+#SACHIN
